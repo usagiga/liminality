@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".eslintrc.js",
+    "next-env.d.ts",
+    "jest.*.js",
+    "docker/json-server/*.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
