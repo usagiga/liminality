@@ -1,0 +1,30 @@
+name: "Run tests"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      # Use Node.js
+      - name: Use Node.js 17.2
+        uses: actions/setup-node@v1
+        with:
+          node-version: 17.2
+
+      # Run jest
+      # When CI=true, react-scripts test run once
+      # https://create-react-app.dev/docs/running-tests/#continuous-integration
+      - name: Run jest
+        run: |
+          npm ci
+          npm run test
