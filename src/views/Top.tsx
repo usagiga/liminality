@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import './Top.css';
 
-const App: FC = function () {
+const Top: FC = function () {
   return (
     <div className="app">
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit <code>src/Top.tsx</code> and save to reload.
         </p>
         <a
           className="app-link"
@@ -23,4 +23,4 @@ const App: FC = function () {
   );
 };
 
-export default App;
+export default Top;
