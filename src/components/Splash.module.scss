@@ -35,6 +35,10 @@
   background-color: #282c34;
 }
 
+.innerContainer {
+  opacity: 0;
+}
+
 .turnVisible {
   animation: visibleAnime forwards 1s ease-in-out;
 }
@@ -54,6 +58,10 @@
 }
 
 @keyframes invisibleAnime {
+  from {
+    opacity: 100;
+  }
+
   to {
     visibility: hidden;
     opacity: 0;

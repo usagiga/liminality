@@ -1,10 +1,10 @@
+//noinspection CssInvalidAtRule
+@import-normalize;
+
 body {
   margin: 0;
 
-  /*
-        if you want to use woff,
-        visit https://fonts.google.com/?subset=japanese
-      */
+  // visit https://fonts.google.com/?subset=japanese
   font-family:
     'M PLUS Rounded 1c',
     'Noto Sans Japanese',

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './Top.module.css';
+import styles from './Top.module.scss';
 import Splash from '../components/Splash';
 
 const Top: FC = function () {
