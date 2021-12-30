@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import Top from './views/Top';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './router';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Top />
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
 );
-
-// If you want to route multiple pages,
-// use React Router.
-// https://create-react-app.dev/docs/adding-a-router/
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
